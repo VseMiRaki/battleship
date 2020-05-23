@@ -1,17 +1,12 @@
+language: minimal
 dist: trusty
 
-include:
-  - os: linux
-    addons:
-      apt:
-        update: true
-        packages:
-          - docker-compose
+services:
+  - docker-compose
 
 jobs:
   include:
-    - stage: build-run docker 
+    - stage: build-run docker-compose
       script:
       - docker-compose --version
-      - docker --version
       - docker-compose up
