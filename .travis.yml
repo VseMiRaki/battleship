@@ -1,5 +1,13 @@
 dist: trusty
 
+include:
+  - os: linux
+    addons:
+      apt:
+        update: true
+        packages:
+          - docker-compose
+
 jobs:
   include:
     - stage: build-run docker 
