@@ -1,8 +1,9 @@
 language: minimal
 dist: trusty
 
-services:
-  - docker-compose
+  addons:
+    apt_packages:
+      - docker-compose
 
 jobs:
   include:
@@ -10,3 +11,6 @@ jobs:
       script:
       - docker-compose --version
       - docker-compose up
+addons:
+  apt_packages:
+    - nginx
