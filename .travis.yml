@@ -4,5 +4,4 @@ jobs:
   include:
     - stage: build-run docker-compose
       script:
-      - docker-compose --version
-      - docker-compose up
+      - docker-compose up --build
