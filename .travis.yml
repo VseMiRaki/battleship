@@ -12,6 +12,6 @@ jobs:
   include:
     - stage: build-run docker 
       script:
-      - docker-compose --vesion
+      - docker-compose --version
       - docker --version
       - docker-compose up
