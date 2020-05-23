@@ -1,10 +1,5 @@
 dist: trusty
 
-addons:
-    apt:
-      packages:
-      - docker-compose
-
 jobs:
   include:
     - stage: build-run docker 
