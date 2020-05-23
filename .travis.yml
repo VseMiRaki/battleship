@@ -1,9 +1,9 @@
 language: minimal
 dist: trusty
 
-  addons:
-    apt_packages:
-      - docker-compose
+addons:
+  apt_packages:
+    - docker-compose
 
 jobs:
   include:
